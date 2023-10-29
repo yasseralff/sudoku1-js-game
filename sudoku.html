@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SU &#183; DO &#183; KU</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="screen">
+        <div class="main-game active" id="game-screen">
+          <div class="main-sudoku-grid">
+            <!-- 81 cell -->
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+            <div class="main-grid-cell"></div>
+          </div>
+          <div class="main-game-info-box main-game-info-time">
+            <span id="game-time">00:00:00</span>
+            <div class="pause-btn" id="btn-pause">
+              <i class="bx bx-pause"></i>
+            </div>
+          </div>
+
+          <div class="numbers">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="delete" id="btn-delete">X</div>
+          </div>
+        </div>
+
+        <div class="pause-screen" id="pause-screen">
+          <div class="btn btn-blue" id="btn-resume">Resume</div>
+          <div class="btn" id="btn-new-game">New game</div>
+        </div>
+
+        <div class="result-screen" id="result-screen">
+          <div class="congrate">Completed</div>
+          <div class="info">Time</div>
+          <div id="result-time"></div>
+          <div class="btn" id="btn-new-game-2">New Game</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/constant.js"></script>
+    <script src="./scripts/puzzle.js"></script>
+    <script src="./scripts/sudoku.js"></script>
+  </body>
+</html>
